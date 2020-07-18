@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Wiadomosc</h1>
+<p th:text="'Your message to user with id '+${id}+ ': '"/>
+<p th:text="${message}"/>
+<p th:text="'Sent by: '+${signature}"/>
+</body>
+</html>

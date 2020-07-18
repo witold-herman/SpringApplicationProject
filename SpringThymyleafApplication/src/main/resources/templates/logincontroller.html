@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Dane użytkownika</h1>
+<p th:text="'Your name: '+${name}"/>
+<p th:text="'Your password: '+${password}"/>
+<input id="id" placeholder="Receiver id"></input>
+<input id="message" placeholder="Your message"></input>
+<input id="signature" placeholder="Your signature"></input>
+
+<a href="" onclick="this.href='http://localhost:8080/message/?id='
++ document.getElementById('id').value
++ '&message=' + document.getElementById('message').value
++ '&signature=' + document.getElementById('signature').value">
+    Send message
+</a>
+</body>
+</html>
